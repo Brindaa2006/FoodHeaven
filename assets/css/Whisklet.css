@@ -1,5 +1,5 @@
 /*-----------------------------------*\ 
-  #foodhub.css
+  #Whisklet.css
 \*-----------------------------------*/
 
 /**
@@ -20,13 +20,13 @@
    * colors 
    */
 
-  --red-orange-crayola: hsl(0, 100%, 66%);
-  --space-cadet: hsl(249, 37%, 19%);
-  --pistachio: hsl(88, 50%, 60%);
-  --cultured: hsl(220, 13%, 95%);
-  --saffron: hsl(45, 91%, 58%);
-  --rhythm: hsl(240, 9%, 51%);
-  --white: hsl(0, 0%, 100%);
+  --accent-pink: hsl(340, 65%, 75%);
+  --text-dark:hsl(25, 12%, 35%));
+  --cream-base: hsl(50, 25%, 95%);
+  --soft-grey: hsl(220, 5%, 85%);
+  --fusion-pop: hsl(45, 95%, 60%);
+  --link-subtle:hsl(240, 5%, 50%);
+  --pure-white: hsl(0, 0%, 100%);
 
   /**
    * typography 
@@ -91,14 +91,14 @@ html {
 
 ::-webkit-scrollbar { width: 5px; }
 
-::-webkit-scrollbar-track { background: var(--cultured); }
+::-webkit-scrollbar-track { background: var(--soft-grey); }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 5px;
-  background: var(--saffron);
+  background: var(--fusion-pop);
 }
 
-::-webkit-scrollbar-thumb:hover { background: var(--space-cadet); }
+::-webkit-scrollbar-thumb:hover { background: var(--text-dark); }
 
 
 
@@ -111,7 +111,7 @@ html {
 .btn {
   height: 55px;
   padding: 0 25px;
-  color: var(--space-cadet);
+  color: var(--text-dark);
   font-size: 14px;
   font-weight: 500;
   transition: var(--default-transition);
@@ -119,9 +119,9 @@ html {
 
 .btn:hover { filter: saturate(1.05) brightness(1.05); }
 
-.btn-primary { background: var(--saffron); }
+.btn-primary { background: var(--fusion-pop); }
 
-.btn-secondary { background: var(--cultured); }
+.btn-secondary { background: var(--soft-grey); }
 
 .btn-icon {
   display:     flex;
@@ -131,7 +131,7 @@ html {
 
 .section-title {
   max-width: 420px;
-  color: var(--space-cadet);
+  color: var(--text-dark);
   font-size: var(--fs-2);
   font-weight: 600;
 }
@@ -156,7 +156,7 @@ html {
   position: relative;
   max-width: 1440px;
   margin: auto;
-  background: var(--white);
+  background: var(--pure-white);
   overflow: hidden;
 }
 
@@ -215,12 +215,12 @@ html {
 }
 
 .nav-link {
-  color: var(--space-cadet);
+  color: var(--text-dark);
   font-size: var(--fs-5);
   transition: 0.25s ease;
 }
 
-.nav-link:hover { color: var(--saffron); }
+.nav-link:hover { color: var(--fusion-pop); }
 
 .navbar-btn-group {
   display:     flex;
@@ -230,18 +230,18 @@ html {
 
 .shopping-cart-btn {
   position: relative;
-  background: var(--cultured);
+  background: var(--soft-grey);
   width:  50px;
   height: 50px;
   border-radius: 50%;
   display:         flex;
   justify-content: center;
   align-items:     center;
-  border: 2px solid var(--white);
+  border: 2px solid var(--pure-white);
 }
 
 .shopping-cart-btn .count {
-  background: var(--saffron);
+  background: var(--fusion-pop);
   position: absolute;
   top:   -2px;
   right: -2px;
@@ -251,7 +251,7 @@ html {
   align-items: center;
   padding: 0 7px;
   border-radius: 20px;
-  color: var(--space-cadet);
+  color: var(--text-dark);
   font-size: 12px;
   font-weight: 500;
 }
@@ -264,7 +264,7 @@ html {
 }
 
 .menu-toggle-btn .line {
-  background: var(--space-cadet);
+  background: var(--text-dark);
   width: 20px;
   height: 2px;
   border-radius: 2px;
@@ -308,13 +308,13 @@ html {
 .cart-box-ul::-webkit-scrollbar { display: none; }
 
 .cart-h4 {
-  color: var(--space-cadet);
+  color: var(--text-dark);
   margin-bottom: 30px;
   font-weight: 600;
 }
 
 .cart-item {
-  background: var(--cultured);
+  background: var(--soft-grey);
   display:     flex;
   align-items: center;
   margin-bottom: 30px;
@@ -337,15 +337,15 @@ html {
 .cart-item:hover .product-img { transform: scale(1.05); }
 
 .cart-item .product-name {
-  color: var(--space-cadet);
+  color: var(--text-dark);
   font-size: var(--fs-5);
   font-weight: 600;
   width: calc(100% - 135px);
 }
 
 .cart-item .product-price {
-  background: var(--saffron);
-  color: var(--space-cadet);
+  background: var(--fusion-pop);
+  color: var(--text-dark);
   font-weight: 500;
   width:  60px;
   height: 60px;
@@ -362,7 +362,7 @@ html {
 }
 
 .cart-btn-group {
-  background: var(--white);
+  background: var(--pure-white);
   position: fixed;
   bottom: 0;
   left:   0;
@@ -394,8 +394,8 @@ html {
 .home-left { text-align: center; }
 
 .home-subtext {
-  background: var(--cultured);
-  color: var(--space-cadet);
+  background: var(--soft-grey);
+  color: var(--text-dark);
   font-size: 13px;
   display: inline-block;
   padding: 3px;
@@ -403,7 +403,7 @@ html {
 }
 
 .main-heading {
-  color: var(--space-cadet);
+  color: var(--text-dark);
   font-size: var(--fs-1);
   font-weight: 600;
   line-height: 1.1;
@@ -412,7 +412,7 @@ html {
 }
 
 .home-text {
-  color: var(--rhythm);
+  color: var(--link-subtlem);
   margin-bottom: 30px;
   line-height: 1.6;
 }
@@ -573,20 +573,20 @@ html {
 }
 
 .dotted-border {
-  border: 3px dotted var(--cultured);
+  border: 3px dotted var(--soft-grey);
   padding: 10px;
 }
 
 .number-lg {
   font-size: var(--fs-1);
   font-family: "Monoton", cursive;
-  color: var(--space-cadet);
+  color: var(--text-dark);
 }
 
 .text-md {
   font-size: var(--fs-3);
   font-weight: 600;
-  color: var(--space-cadet);
+  color: var(--text-dark);
 }
 
 .shape-6 {
@@ -638,11 +638,11 @@ html {
 .service-card .card-number {
   font-size: 42px;
   font-family: "Monoton", cursive;
-  color: var(--saffron);
+  color: var(--fusion-pop);
 }
 
 .service-card .card-heading {
-  color: var(--space-cadet);
+  color: var(--text-dark);
   font-size: var(--fs-3);
   font-weight: 600;
   letter-spacing: -1px;
@@ -650,7 +650,7 @@ html {
 }
 
 .service-card .card-text {
-  color: var(--rhythm);
+  color: var(--link-subtle);
   font-size: var(--fs-4);
   line-height: 1.5;
 }
@@ -704,13 +704,13 @@ html {
 .card-badge ion-icon { font-size: 13px; }
 
 .card-badge.green {
-  background: var(--pistachio);
-  color: var(--space-cadet);
+  background: var(--cream-base);
+  color: var(--text-dark);
 }
 
 .card-badge.red {
-  background: var(--red-orange-crayola);
-  color: var(--space-cadet);
+  background: var(--pink-brown-white);
+  color: var(--text-dark);
 }
 
 .product-card .wrapper {
@@ -718,25 +718,25 @@ html {
   justify-content: space-between;
   align-items:     center;
   gap: 15px;
-  background: var(--cultured);
+  background: var(--soft-grey);
   margin-bottom: 15px;
 }
 
 .product-card .product-name {
-  color: var(--space-cadet);
+  color: var(--text-dark);
   font-size: var(--fs-3);
   font-weight: 600;
   padding-left: 15px;
 }
 
 .product-card .product-price {
-  background: var(--saffron);
+  background: var(--fusion-pop);
   height: 60px;
   width:  60px;
   display:         flex;
   justify-content: center;
   align-items:     center;
-  color: var(--space-cadet);
+  color: var(--text-dark);
   font-size: 24px;
   font-weight: 500;
 }
@@ -749,7 +749,7 @@ html {
 
 .product-card .product-text {
   font-size: var(--fs-4);
-  color: var(--rhythm);
+  color: var(--link-subtle);
   line-height: 1.6;
   letter-spacing: 0.4px;
   margin-bottom: 15px;
@@ -759,7 +759,7 @@ html {
   display:     flex;
   align-items: center;
   gap: 5px;
-  color: var(--saffron);
+  color: var(--fusion-pop);
 }
 
 .product .btn-primary { margin-inline: auto; }
@@ -785,7 +785,7 @@ html {
 }
 
 .testimonials-card .card-title {
-  color: var(--space-cadet);
+  color: var(--text-dark);
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -797,11 +797,11 @@ html {
   margin-bottom: 15px;
 }
 
-.testimonials-rating ion-icon { color: var(--saffron); }
+.testimonials-rating ion-icon { color: var(--fusion-popn); }
 
 .testimonials-text {
   font-size: var(--fs-4);
-  color: var(--rhythm);
+  color: var(--link-subtle);
   line-height: 1.4;
   letter-spacing: 0.5px;
   margin-bottom: 15px;
@@ -828,7 +828,7 @@ html {
 
 .customer-name {
   font-size: 14px;
-  color: var(--space-cadet);
+  color: var(--text-dark);
   font-weight: 600;
 }
 
@@ -841,7 +841,7 @@ html {
 \*-----------------------------------*/
 
 footer {
-  background: var(--space-cadet);
+  background: var(--text-dark);
   padding: 50px var(--px);
 }
 
@@ -858,16 +858,16 @@ footer {
 }
 
 .social-link ion-icon {
-  color: var(--cultured);
+  color: var(--soft-grey);
   font-size: 15px;
   transition: 0.25s ease;
 }
 
-.social-link ion-icon:hover { color: var(--saffron); }
+.social-link ion-icon:hover { color: var(--fusion-pop); }
 
 .copyright {
   font-size: 12px;
-  color: var(--rhythm);
+  color: var(--link-subtle);
   text-align: center;
   letter-spacing: 0.5px;
 }
