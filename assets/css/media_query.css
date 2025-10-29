@@ -86,15 +86,17 @@
 
 
   /**
-   * HEADER, HOME, ABOUT, SERVICES, PRODUCTS, TESTIMONIALS, FOOTER
+   * HEADER, HOME, OUR STORY, CUSTOM MENU, WHISKLET RANGE,FUSION SPECIALS, ECO PROMISE, SWEET REVIEWS, FOOTER
    */
 
   .navbar-wrapper,
   .home,
-  .about,
-  .services,
-  .product,
-  .testimonials,
+.our-story,
+  .custom-menu,
+ .whisklet-range,
+  .fusion-specials
+  .eco-promise
+ .sweet-reviews,
   .footer-wrapper {
     max-width: var(--mw);
     margin-inline: auto;
@@ -171,7 +173,7 @@
 
 
   /**
-   * ABOUT 
+   * OUR STORY
    */
 
   .about-left .img-box { aspect-ratio: 5 / 3; }
@@ -179,7 +181,7 @@
 
 
   /**
-   * SERVICES 
+   * CUSTOM MENU
    */
 
   .service-card { display: grid; }
@@ -195,7 +197,7 @@
 
 
   /**
-   * PRODUCTS 
+   * WHISKLET RANGE
    */
 
   .products-grid {
@@ -206,11 +208,58 @@
 
 
 
+ /**
+ * FUSION SPECIALS
+ * A dedicated grid for high-impact, unique products like Rasmalai Cheesecake.
+ */
+
+.fusion-specials-grid {
+  /* Three equally sized columns for stunning product display */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 40px 30px; /* Smaller gaps than the main product grid */
+  margin-bottom: 70px;
+}
+
+/* Optional: Style for the individual card within the grid */
+.fusion-card {
+  text-align: center;
+  /* Add styling for borders, shadows, etc. to make them pop */
+}
+
+
+
+
+
   /**
-   * TESTIMONIALS 
+ * ECO PROMISE
+ * Two-column layout to balance the program's explanation with a visual (e.g., jar image).
+ */
+
+.eco-promise-container {
+  /* Two columns: one for text explanation, one for a supporting image/graphic */
+  display: grid;
+  grid-template-columns: 1.5fr 1fr; /* Text column slightly wider than image column */
+  gap: 80px; /* Large gap for clear separation */
+  margin-bottom: 80px;
+  align-items: center; /* Vertically center content */
+}
+
+/* Optional: Styling for the text block within the container */
+.eco-promise-text {
+  /* Use your dark text color here: color: var(--whisklet-text-dark); */
+  line-height: 1.6;
+}
+
+
+    
+
+
+  /**
+   * SWEET REVIEWS
    */
 
-  .testimonials-grid { grid-template-columns: 1fr 1fr; }
+  .sweet-reviews-grid { grid-template-columns: 1fr 1fr; }
 
 }
 
@@ -323,10 +372,10 @@
 
 
   /**
-   * SERVICES 
+   * CUSTOM MENU
    */
 
-  .services {
+ .custom-menu {
     grid-template-columns: 1fr 1fr;
     gap: 60px 30px;
   }
@@ -334,18 +383,18 @@
 
 
   /**
-   * PRODUCTS 
+   * WHISKLET RANGE
    */
 
-  .products-grid { grid-template-columns: repeat(3, 1fr); }
+ .whisklet-range{ grid-template-columns: repeat(3, 1fr); }
 
 
 
   /**
-   * TESTIMONIALS 
+   * SWEET REVIEWS
    */
 
-  .testimonials { padding-bottom: 200px; }
+ .sweet-reviews { padding-bottom: 200px; }
 
 
 
